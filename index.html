@@ -3,19 +3,22 @@
     <head>
         <title>HOME</title>
         <style>
+            body {
+                margin: 0;
+            }
+            
             header {
                 display: flex;
-                border: 1px solid black;
                 justify-content: space-between;
                 align-items: center;
                 padding-left: 30px;
                 padding-right: 30px;
                 font-family: cursive;
                 font-size: x-large;
+                background-color: white;
             }
 
             header a {
-                
                 text-decoration: none;
                 padding-left: 30px;
                 font-family: cursive;
@@ -30,11 +33,39 @@
             .home-link {
                 color: red;
             }
+
+
+
+            section {
+                display: flex;
+                border: 1px solid black;
+                padding: 200px;
+                background-color: black;
+            }
+
+            aside {
+                border: 1px solid black;
+                font-family: cursive;
+                font-size: x-large;
+                padding: 50px;
+                color: white;
+            }
+
+            aside h1 {
+                color: orangered;
+                margin-bottom: 1px;
+            }
+
+            img {
+                border: 1px solid black;
+                border-radius: 50%;
+                
+            }
         </style>
     </head>
     <body>
         <header>
-            <h1>Prince Q1</h1>
+            <h1>Prince Q</h1>
             <nav>
                 <a class="home-link" href="/index.html">Home</a>
                 <a class="blog-link" href="/blog.html">Blog</a>
@@ -42,5 +73,14 @@
                 <a class="contact-link" href="/contact.html">Contact</a>
             </nav>
         </header>
+        <section>
+            <aside>
+                <h1>Welcome to the home of <br> Prince Q:</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus qui 
+                    totam, quaerat molestiae praesentium laboriosam nemo amet tempora dolor cum 
+                    possimus consectetur esse sunt quia illum obcaecati? Dolor, quia obcaecati.</p>
+            </aside>
+            <img src="/princeHead.jpeg"">
+        </section>
     </body>
 </html>
