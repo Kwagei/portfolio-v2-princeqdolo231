@@ -7,6 +7,10 @@
                 margin: 0;
             }
             
+            /*
+                THE Page title and Navigator
+            */
+
             header {
                 display: flex;
                 justify-content: space-between;
@@ -34,17 +38,17 @@
                 color: red;
             }
 
-
+            /*
+                THE BIG BOARD 
+            */
 
             section {
                 display: flex;
-                border: 1px solid black;
                 padding: 200px;
                 background-color: black;
             }
 
             aside {
-                border: 1px solid black;
                 font-family: cursive;
                 font-size: x-large;
                 padding: 50px;
@@ -57,10 +61,79 @@
             }
 
             img {
-                border: 1px solid black;
                 border-radius: 50%;
                 
             }
+
+            /*
+                About Me
+            */
+
+            main {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 90px;
+                font-size: x-large;
+            }
+
+            main h1 {
+                font-family: cursive;
+                font-size: xx-large;
+            }
+
+            /*
+                Projest Diplaying Container, Projecrs itself and Projects
+            */
+            #Projects-Heading {
+                border: 1px solid green;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #Projests-Boxs {
+                border: 1px solid blue;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .Projects {
+                border: 1px solid yellow;
+                width: 25%;
+                margin: 50px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            #Projects-First-Card {
+                
+            }
+
+            #Projects-First-Card img {
+                background-image: url("/princeHead.jpeg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                background-color: black;
+                border: 1px solid green;
+                border-radius: 0%;
+                height: 200px;
+                opacity: 50%;
+            }
+
+            #Projects-First-Card p {
+                background-color: white;
+            }
+
+            #Projects-Middle-Card {
+                
+            }
+
+            #Projects-Last-Card {
+                
+            }
+
         </style>
     </head>
     <body>
@@ -82,5 +155,65 @@
             </aside>
             <img src="/princeHead.jpeg"">
         </section>
+       <main>
+        <h1>About Me</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus qui 
+            totam, quaerat molestiae praesentium laboriosam nemo amet tempora dolor cum 
+            possimus consectetur esse sunt quia illum obcaecati? Dolor, quia obcaecati.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus qui 
+            totam, quaerat molestiae praesentium laboriosam nemo amet tempora dolor cum 
+            possimus consectetur esse sunt quia illum obcaecati? Dolor, quia obcaecati.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus qui 
+            totam, quaerat molestiae praesentium laboriosam nemo amet tempora dolor cum 
+            possimus consectetur esse sunt quia illum obcaecati? Dolor, quia obcaecati.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus qui 
+            totam, quaerat molestiae praesentium laboriosam nemo amet tempora dolor cum 
+            possimus consectetur esse sunt quia illum obcaecati? Dolor, quia obcaecati.
+        </p>
+            <div>
+                <ol>
+                    <li>
+                        This is the first thing i lover to do.This is the first thing i lover to doThis is the 
+                        first thing i lover lover to do
+                    </li>
+                    <li>
+                        This is the first thing i lover to do.This is the first thing i lover to doThis is the 
+                        first thing i lover lover to do
+                    </li>
+                    <li>
+                        This is the first thing i lover to do.This is the first thing i lover to doThis is the 
+                        first thing i lover lover to do
+                    </li>
+                    <li>
+                        This is the first thing i lover to do.This is the first thing i lover to doThis is the 
+                        first thing i lover lover to do
+                    </li>
+                    <li>
+                        This is the first thing i lover to do.This is the first thing i lover to doThis is the 
+                        first thing i lover lover to do
+                    </li>
+                </ol>
+            </div>
+       </main>
+       <div id="Projects-Heading">
+            <h1>Latest Project</h1>
+            <p>It does't get easier but you get better</p>
+       </div>
+        <div id="Projests-Boxs">
+
+            <div class="Projects" id="Projects-First-Card">
+                <img src="" alt="">
+                <p>First Box</p>
+            </div>
+            <div class="Projects" id="Projects-Middle-Card">
+                <img src="" alt="">
+                <p>Second Box</p>
+            </div>
+            <div class="Projects" id="Project-Last-Card">
+                <img src="" alt="">
+                <p>Thid Box</p>
+            </div>
+        </div>
     </body>
 </html>
