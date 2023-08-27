@@ -53,6 +53,51 @@
                 font-family: cursive;
                 font-size: 3em;
             }
+
+            #Contact-Me-Form-h1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-family: cursive;
+                font-size: x-large;
+                padding: 0%;
+            }
+            #Form-Main-Page {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-left: 20%;
+                padding-right: 20%;
+                margin-bottom: 80px;
+            }
+
+            #Contact-Me-Form {
+                
+            }
+
+            #Form-First-Name {
+            
+            }
+
+            #Form-First-Section {
+                display: flex;
+                justify-content: space-around;
+            }
+
+            #Form-Second-Section {
+                display: flex;
+                flex-direction: column; 
+                justify-content: space-around;  
+            }
+
+            #Form-Third-Section {
+                display: flex;
+            }
+
+            #Form-Fouth-Section {
+                display: flex;
+                flex-direction: column;
+            }
         </style>
     </head>
     <body>
@@ -70,23 +115,33 @@
             <aside>
                 <h1>Contact Me</h1>
         </section>
-        <main>
-            <div id="Contact-Me-Form-h1">
-                <h1>Get connected with me on social media.</h1>
-                <p>It does't get easier but you get better</p>
-            </div>
+
+        <div id="Contact-Me-Form-h1">
+            <h1>Get connected with me on social media.</h1>
+            <p>It does't get easier but you get better</p>
+        </div>
+
+        <main id="Form-Main-Page">
+
             <div id="Contact-Me-Form">
                 <form method="" action="">
-
                     <fieldset>
                         <br>
-                            <label>Name</label><br>
-                                <input type="text" name="inputName"><br><br>
+                        <div id="Form-First-Section">
+
+                            <div id="Form-First-Name">
+                                <label>Name</label><br>
+                                <input type="text" name="inputName">
+                            </div>
         
-                            <label>Email Address</label><br>
-                                <input type="Email" name="inputEmail"><br><br>
-        
-                            <label>Subject:</label><br>
+                            <div id="Form-Email-Address">
+                                <label>Email Address</label><br>
+                                 <input type="Email" name="inputEmail">
+                            </div>
+                        </div>
+                        <br>
+                        <div id="Form-Second-Section">
+                            <label>Subject:</label>
                             <select>
                                 <optgroup>
                                     <option></option>
@@ -95,11 +150,12 @@
                                     <option>Business</option>
                                 </optgroup>
                             </select>
-                                <br><br>
-        
-                            <label>Gender:</label><br><br>
-                                <input type="radio" name="gender" value="male"> Male <br>
-                                <input type="radio" name="gender" value="female"> Female <br>
+                        </div>
+                        <br>
+                        <div id="Form-Third-Section">
+                            <label>Gender:</label><br>
+                                <input type="radio" name="gender" value="male"> Male 
+                                <input type="radio" name="gender" value="female"> Female
                                 <br>
         
                             <label>County:</label><br>
@@ -123,13 +179,15 @@
                                     <option>Sinoe County</option>
                                 </optgroup>
                             </select>
-                            <br><br>
-        
+                        </div>
+                        <br>
+                        <div id="Form-Fouth-Section">
                             <label>Message</label><br>
                                 <textarea rows="10" cols="50" name="addressLocation">
                                 </textarea>
                                 <br><br>
                             <input type="submit" value="Submit">
+                        </div>
                     </fieldset>
                 </form>
             </div>
